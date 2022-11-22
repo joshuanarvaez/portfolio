@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I practice <span>Fullstack Development</span> <br />and  <span> Responsive Web Design</span></h2>
+      <h2 className="head-text"><span>Fullstack Developer</span> <br /> &  <span> Responsive Web Designer</span></h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (

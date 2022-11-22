@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
+import Video from '../../assets/video/chicago.mov';
 
 const scaleVariants = {
   whileInView: {
@@ -23,18 +24,22 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <div className="app__header-badge">
-        <div className="badge-cmp app__flex">
+      <div className="app__header-badge" style={{zIndex: 1}} >
+        <div className="badge-cmp app__flex" >
           <span>👋🏽</span>
-          <div style={{ marginLeft: 20 }}>
-            <p className="p-text">Hi!! I'm</p>
+          <div >
+            <p className="p-text">Hello!! I'm</p>
             <h1 className="head-text">Josh</h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
           <p className="p-text">Web Developer</p>
+          <div>
+          <p className="p-text">Web Developer</p>
+          </div>
         </div>
+       
       </div>
     </motion.div>
 
@@ -43,14 +48,7 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.profile} alt="profile_bg" />
-      <motion.img
-        whileInView={{ scale: [0, 1] }}
-        transition={{ duration: 1, ease: 'easeInOut' }}
-        src={images.circle}
-        alt="profile_circle"
-        className="overlay_circle"
-      />
+      <img src={images.profile} alt="profile_bg" style={{borderRadius: 15}} />
     </motion.div>
 
     <motion.div
@@ -59,11 +57,25 @@ const Header = () => (
       className="app__header-circles"
     >
       {[images.react, images.node, images.redux].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
+        <div className="circle-cmp app__flex" key={`circle-${index}`} style={{zIndex: 1}}>
           <img src={circle} alt="profile_bg" />
         </div>
       ))}
     </motion.div>
+    <video autoPlay loop muted
+    style={{
+      position: "absolute",
+      width: "100%",
+      left: "50%",
+      top: "50%",
+      height: "100%",
+      objectFit: "cover",
+      transform: "translate(-50%, -50%)",
+      zIndex: 0,
+    }}
+  >
+    <source src={Video}></source>
+  </video>
   </div>
 );
 

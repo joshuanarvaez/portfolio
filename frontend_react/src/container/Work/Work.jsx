@@ -38,7 +38,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text-2"><span> My </span> Digital <span> Portfolio</span></h2>
 
       <div className="app__work-filter">
         {['Frontend', 'Fullstack', 'Next JS', 'React JS', 'All'].map((item, index) => (
@@ -80,6 +80,7 @@ const Work = () => {
                     <AiFillEye />
                   </motion.div>
                 </a>
+                
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}

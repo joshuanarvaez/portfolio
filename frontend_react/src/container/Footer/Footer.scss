@@ -26,9 +26,9 @@
       margin: 1rem 0;
       padding: 1rem;
       border-radius: 10px;
-      cursor: pointer;
+      cursor: pointer;  
       background-color: #fef4f5;
-  
+
       transition: all 0.3s ease-in-out;
   
       img {
@@ -45,7 +45,7 @@
         font-weight: 500;
       }
       &:hover {
-        box-shadow: 0 0 25px #fef4f5;
+        box-shadow: 0 0 25px var(--white-color);
       }
   
       @media screen and (max-width: 450px) {
@@ -58,12 +58,16 @@
     }
   }
   
-  .app__footer-cards .app__footer-card:last-child {
-    background-color: #f2f7fb;
+  .app__footer-cards .app__footer-card {
+    background-color:#edf2f8;
   }
   
-  .app__footer-cards .app__footer-card:last-child:hover {
-    box-shadow: 0 0 25px #f2f7fb;
+  .app__footer-cards .app__footer-card {
+    box-shadow: 0 0 25px black;
+
+    &:hover {
+      background-color: var(--yellow-color);
+    };
   }
   
   .app__footer-form {
@@ -73,12 +77,9 @@
   
     div {
       width: 100%;
-  
       margin: 0.75rem 0;
       border-radius: 10px;
-      cursor: pointer;
-      background-color: var(--primary-color);
-  
+      cursor: pointer;  
       transition: all 0.3s ease-in-out;
   
       input,
@@ -87,7 +88,8 @@
         padding: 0.95rem;
         border: none;
         border-radius: 7px;
-        background-color: var(--primary-color);
+        background-color: #edf2f8;
+        box-shadow: 0 0 25px black;
   
         font-family: var(--font-base);
         color: var(--secondary-color);
@@ -99,7 +101,7 @@
       }
   
       &:hover {
-        box-shadow: 0 0 25px var(--primary-color);
+        box-shadow: 0 0 25px #fef4f5;
       }
     }
   
@@ -108,6 +110,7 @@
       border-radius: 10px;
       border: none;
       background-color: var(--secondary-color);
+      box-shadow: 0 0 25px black;
   
       font-weight: 500;
       color: var(--white-color);
@@ -119,7 +122,8 @@
       cursor: pointer;
   
       &:hover {
-        background-color: #2430af;
+        background-color: var(--yellow-color);
+        box-shadow: 0 0 25px #fef4f5;
       }
     }
   

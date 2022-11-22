@@ -2,15 +2,26 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
-
-  --primary-color: #edf2f8;
-  --secondary-color: #2d87ea;
+  
+  --primary-color: #005874;
+  --secondary-color: #1989AC;
   --black-color: #030303;
-  --lightGray-color: #e4e4e4;
+  --lightGray-color: #ffffff;
   --gray-color: #6b7688;
+  --white-color: #ffffff; 
+  --yellow-color: #FFBE00;
+
+
+  /* --primary-color: #001E6C;
+  --secondary-color: #FCD900;
+  --black-color: #030303;
+  --lightGray-color: #ffffff;
+  --gray-color: #035397;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+  --white-color: #FCD900; */
 }
+
+
 
 * {
   box-sizing: border-box;

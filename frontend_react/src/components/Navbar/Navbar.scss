@@ -21,8 +21,8 @@
     align-items: center;
   
     img {
-      width: 120px;
-      height: 40px;
+      width: 160px;
+      height: 50px;
         
       @media screen and (min-width: 2000px) {
         width: 180px;
@@ -55,7 +55,7 @@
       }
   
       a {
-        color: var(--gray-color);
+        color: var(--yellow-color);
         text-decoration: none;
         flex-direction: column;
   
@@ -65,13 +65,13 @@
         transition: all 0.3s ease-in-out;
   
         &:hover {
-          color: var(--secondary-color);
+          color: var(--yellow-color);
         }
       }
   
       &:hover {
         div {
-          background: var(--secondary-color);
+          background: var(--yellow-color);
         }
       }
     }
@@ -156,7 +156,7 @@
             transition: all 0.3s ease-in-out;
   
             &:hover {
-              color: var(--secondary-color);
+              color: var(--yellow-color);
             }
           }
         }

@@ -4,7 +4,7 @@ export default {
     type:'document',
     fields:[
            {name:'name',
-               title:'name',
+               title:'Name',
                type:'string'
             },
             {
@@ -16,6 +16,11 @@ export default {
                 name:'desc',
                 title:'Desc',
                 type:'string'
-            }
+            },
+            {
+        name: 'docLink',
+        title: 'Doc Link',
+        type: 'string',
+      },
     ]
 }
