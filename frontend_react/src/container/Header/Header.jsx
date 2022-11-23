@@ -24,7 +24,7 @@ const Header = () => (
       transition={{ duration: 0.5 }}
       className="app__header-info"
     >
-      <div className="app__header-badge" style={{zIndex: 1}} >
+      <div className="app__header-badge" style={{zIndex: 1, marginTop: 20}} >
         <div className="badge-cmp app__flex" >
           <div >
             <h1 className="head-text">Hello!! <span>👋🏽</span></h1>
@@ -35,8 +35,8 @@ const Header = () => (
           <p className="p-text"></p>
         </div>
         <div className="tag-cmp app__flex">
-        <span>I'm a</span>
-          <p className="p-text">Web Developer</p>
+        <span>I'm @</span>
+          <p className="p-text">Web Developer</p> 
         </div>
        
       </div>
@@ -56,7 +56,7 @@ const Header = () => (
       className="app__header-circles"
     >
       {[images.react, images.node, images.redux].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`} style={{zIndex: 1}}>
+        <div className="circle-cmp app__flex" key={`circle-${index}`} style={{zIndex: 1, marginBottom: 20}}>
           <img src={circle} alt="profile_bg" />
         </div>
       ))}
