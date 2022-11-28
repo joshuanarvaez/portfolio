@@ -12,7 +12,11 @@
       padding: 0;
   
       .copyright {
-        display: none;
+        // display: none;
+        z-index: 1;
+        p {
+          color: var(--white-color);
+        }
       }
     }
   }

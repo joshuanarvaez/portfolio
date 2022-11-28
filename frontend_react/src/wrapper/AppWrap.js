@@ -7,10 +7,10 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
       <SocialMedia />
       <div className="app__wrapper app__flex">
         <Component />
-
         <div className="copyright">
-          <p className="p-text">@2022 Joshua Narvaez</p>
+          <p className="p-text">2022 Joshua Narvaez</p>
           <p className="p-text">All rights reserved</p>
+          <p className="p-text">Images licensed @stock.adobe.com</p>
         </div>
       </div>
       <NavigationDots active={idName} />
