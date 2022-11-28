@@ -7,7 +7,7 @@
   
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.25);
-    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    
     list-style: none;
   
     li {
@@ -90,13 +90,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--yellow-color);
   
   
     svg {
       width: 70%;
       height: 70%;
       color: var(--white-color);
+      border-radius: 15px;
+      &:hover {
+        cursor: pointer;
+    }
     }
   
     div {
@@ -115,8 +119,7 @@
       align-items: flex-end;
       flex-direction: column;
       
-      background: url('../../assets/bgWhite.png');
-      background-color: var(--white-color);
+      background: url('../../assets/navBg.png');
       background-size: cover;
       background-repeat: repeat;
   
@@ -126,9 +129,15 @@
       svg {
         width: 35px;
         height: 35px;
-        color: var(--secondary-color);
+        color: var(--white-color);
         margin: 0.5rem 1rem;
+
+        &:hover {
+          background: var(--yellow-color);
+          cursor: pointer;
       }
+      }
+      
   
       ul {
         list-style: none;
@@ -146,7 +155,7 @@
           margin: 1rem;
   
           a {
-            color: var(--gray-color);
+            color: var(--white-color);
             text-decoration: none;
             font-size: 1rem;
             text-transform: uppercase;

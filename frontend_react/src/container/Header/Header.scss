@@ -2,7 +2,7 @@
 
 #home {
     position: relative;
-    // background: url("../../assets/bgIMG.png");
+    // background: url("../../assets/bgIMG3.png");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -46,7 +46,8 @@
     align-items: center;
     height: 100%;
   
-    margin: 0 2rem 1rem 0;
+    margin: 0 2rem;
+  
   
     @media screen and (max-width: 1200px) {
       width: 100%;
@@ -54,47 +55,51 @@
   }
   
   .app__header-badge {
+    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-
-    
-
-    // div:nth-child(2) {
-    //   background-color: red;
-    // }
-
     z-index: 1;
+    margin-bottom: 3rem;
+
+    .badge-cmp {
+      span {
+        color: var(--white-color);
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: bold;
+      }
+    }
   
     .badge-cmp,
     .tag-cmp {
       padding: 1rem 2rem;
-      background: var(--white-color);
+      background: transparent;
       border-radius: 15px;
       flex-direction: column;
       width: auto;
-      height: 100%;
-  
       box-shadow: 0px 0px 20px var(--white-color);
+      margin-top: 3rem;
     }
   
     .tag-cmp {
       flex-direction: column;
-      margin: 12rem 3rem 0rem 3rem;
+      // margin: 5rem 2rem;
   
       p {
         width: 100%;
-        text-transform: uppercase;
         text-align: right;
+        color: var(--white-color);
+        font-size: 1rem;
+        font-weight: bold;
       }
     }
   
     span {
       font-size: 2.5rem;
+      font-weight: bold;
+      color: var(--yellow-color);
   
       @media screen and (min-width: 2000px) {
         font-size: 5rem;
@@ -111,16 +116,17 @@
     flex: 0.75;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     height: 100%;
+    margin-left: 1rem;
   
     div {
       width: 100px;
       height: 100px;
       border-radius: 50%;
   
-      background: var(--white-color);
+      background: transparent;
       box-shadow: 0px 0px 20px var(--white-color);
   
       img {
@@ -177,15 +183,16 @@
   
   .app__header-img {
     flex: 1;
-    height: 100%;  
+    height: 100%; 
+     
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: 8rem;
+    margin-right: 7rem;
   
     img {
-      width: 40%;
+      width: 60%;
       object-fit: contain;
       z-index: 1;
     }

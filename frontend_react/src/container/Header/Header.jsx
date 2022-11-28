@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
@@ -26,18 +25,13 @@ const Header = () => (
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex" >
-          <div>
-            <h1 className="head-text">Hello!! <span>👋🏽</span></h1>
-          </div>
+            <h1 className="head-text">Hello!!👋🏽</h1>
+            <span> I'm Josh, a web developer.</span>
         </div>
         <div className="tag-cmp app__flex">
-         <span>{"{ myName: Josh }"}</span>
+        <span>Thank you</span>
+          <p className="p-text">for viewing my website!</p> 
         </div>
-        <div className="tag-cmp app__flex">
-        <span>I'm @</span>
-          <p className="p-text">Web Developer</p> 
-        </div>
-       
       </div>
     </motion.div>
 
