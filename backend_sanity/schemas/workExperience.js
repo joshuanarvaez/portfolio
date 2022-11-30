@@ -18,9 +18,9 @@ export default {
                 type:'string'
             },
             {
-        name: 'docLink',
-        title: 'Doc Link',
-        type: 'string',
-      },
+                name: 'docLink',
+                title: 'Doc Link',
+                type: 'string',
+            },
     ]
 }

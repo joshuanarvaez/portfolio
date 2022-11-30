@@ -16,10 +16,43 @@ const Skills = () => {
     const skillsQuery = '*[_type == "skills"]';
 
     client.fetch(query).then((data) => {
+      // the following methods render our experiences in chronological order
+      data.sort();
+      data.reverse();
+      data.push(data.splice(2, 1)[0]);
       setExperiences(data);
     });
 
     client.fetch(skillsQuery).then((data) => {
+      data.sort();
+      data.reverse();
+      data.push(data.splice(11, 1)[0]); // html
+      data.push(data.splice(17, 1)[0]); // css
+      data.push(data.splice(0, 1)[0]); // javascript
+      data.push(data.splice(10, 1)[0]); // react
+      data.push(data.splice(4, 1)[0]); // next
+      data.push(data.splice(15, 1)[0]); // node
+      data.push(data.splice(6, 1)[0]); // redux
+      data.push(data.splice(9, 1)[0]); // rest
+      data.push(data.splice(10, 1)[0]); // sql
+      data.push(data.splice(4, 1)[0]); // mysql
+      data.push(data.splice(3, 1)[0]); // postgresql
+      data.push(data.splice(5, 1)[0]); // sanity
+      data.push(data.splice(1, 1)[0]); // express
+      data.push(data.splice(6, 1)[0]); // aws
+      data.push(data.splice(5, 1)[0]); // git
+      data.push(data.splice(5, 1)[0]); // github
+      data.push(data.splice(3, 1)[0]); // ant design
+      data.push(data.splice(3, 1)[0]); // bootstrap
+      data.push(data.splice(1, 1)[0]); // chakra ui
+      data.push(data.splice(1, 1)[0]); // material ui
+      data.push(data.splice(0, 1)[0]); // tailwind
+
+
+
+
+
+
       setSkills(data);
     });
   }, []);
