@@ -25,10 +25,11 @@ const Header = () => (
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex" >
-            <h1 className="head-text">Hello!!👋🏽</h1>
-            <span> I'm Josh, a web developer.</span>
+            <h1 className="head-text">👋🏽 Hello!!</h1>
+            <img src={images.profile} alt="profile_bg" style={{borderRadius: 15, height: '200px', width: '150px'}} />
         </div>
         <div className="tag-cmp app__flex">
+        <p className="p-text"> I'm Josh, a web developer.</p>
         <span>Thank you</span>
           <p className="p-text">for viewing my website!</p> 
         </div>
@@ -40,10 +41,10 @@ const Header = () => (
       transition={{ duration: 0.5, delayChildren: 0.5 }}
       className="app__header-img"
     >
-      <img src={images.profile} alt="profile_bg" style={{borderRadius: 15}} />
+     
     </motion.div>
 
-    <motion.div
+    {/* <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
@@ -53,7 +54,7 @@ const Header = () => (
           <img src={circle} alt="profile_bg" />
         </div>
       ))}
-    </motion.div>
+    </motion.div> */}
     <video autoPlay loop muted
     style={{
       position: "absolute",

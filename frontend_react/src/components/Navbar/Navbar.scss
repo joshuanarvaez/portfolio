@@ -36,13 +36,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 18px;
     
     list-style: none;
   
     li {
       margin: 0 1rem;
       cursor: pointer;
-  
+      font-size: medium;
       flex-direction: column;
   
       div {
@@ -60,7 +61,7 @@
         flex-direction: column;
   
         text-transform: uppercase;
-        font-weight: 500;
+        font-weight: 900;
   
         transition: all 0.3s ease-in-out;
   

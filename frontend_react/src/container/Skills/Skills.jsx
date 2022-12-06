@@ -47,12 +47,6 @@ const Skills = () => {
       data.push(data.splice(1, 1)[0]); // chakra ui
       data.push(data.splice(1, 1)[0]); // material ui
       data.push(data.splice(0, 1)[0]); // tailwind
-
-
-
-
-
-
       setSkills(data);
     });
   }, []);
