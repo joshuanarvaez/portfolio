@@ -13,7 +13,7 @@ const SocialMedia = () => (
       <a href="https://github.com/joshuanarvaez" target="_blank" rel="noreferrer" ><BsGithub /></a>
     </div>
     <div className="resume">
-      <a href={resume} download="JoshNarvaezResume" target='_blank' rel="noreferrer" style={{paddingTop: '3px', fontSize: '15px'}}><MdPictureAsPdf/>Resume
+      <a href={resume} download="JoshuaNarvaezResume" target='_blank' rel="noreferrer" style={{paddingTop: '3px', fontSize: '15px'}}><MdPictureAsPdf/>Resume
       </a>
     </div>
   </div>
